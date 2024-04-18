@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQuerySession", "JQuerySession\JQuerySession.csproj", "{7B2C10CB-385C-460A-AF20-323B30D01043}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQuerySession", "JQuerySession\JQuerySession.csproj", "{7B2C10CB-385C-460A-AF20-323B30D01043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JquereySelectors", "JquereySelectors\JquereySelectors.csproj", "{B09DFA7C-3321-4314-8C7B-AB4859D21148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7B2C10CB-385C-460A-AF20-323B30D01043}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B2C10CB-385C-460A-AF20-323B30D01043}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B2C10CB-385C-460A-AF20-323B30D01043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

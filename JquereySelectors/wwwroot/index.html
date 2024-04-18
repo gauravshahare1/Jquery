@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ 
+    <script src="lib/jquery/dist/jquery.js"></script>
+
+    <script>
+        $(function () {
+             //alert('jquery loaded sucessfully');
+             //   var v1 = 'V# Tech';
+             //   var para = `Company name is ${v1}`;
+             //   alert(para);
+
+            $('#btn').click(function () {
+            //   $('*').css('background-color', 'yellow');
+             //   $('h2').css('background-color', 'blue');
+               // $('p').css('background-color', 'yellow');
+               // $('#p2').css('background-color', 'yellow');
+                //$('.yellow').css('background-color', 'yellow');
+               // $('p.yellow').css('background-color', 'yellow');
+               // $('div p.yellow').css('background-color', 'yellow');
+               // $('[name="p2"]').css('background-color', 'red');
+                 // $('p:first').css('background-color', 'red');
+                /*  $('p:last').css('background-color', 'yellow');*/
+                //$('p:eq(2)').css('background-color', 'yellow');
+               // $('ul li').css('background-color', 'yellow');
+                /* $('ul li:first').css('background-color', 'yellow');*/
+                /* $('ul li:odd').css('background-color', 'yellow');*/
+                /*  $('ul li:even').css('background-color', 'yellow');*/
+               // $('ul li:first-child').css('background-color', 'yellow');
+                $(this).css('background-color', 'red');
+            });
+           
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Welcome</h1>
+    <h2 class="yellow">Selector Demo</h2>
+    <p>First Parahgraph</p>
+    <p id="p2" name="p2">Second Parahgraph</p>
+    <p class="yellow">Third Parahgraph</p>
+    <p class="yellow">Fourth Parahgraph</p>
+    <p name="p5">Fifth Parahgraph</p>
+
+    <div>
+        <p class="yellow">Sixth Paragraph</p>
+    </div>
+
+    <ul>
+        <li>Mahesh</li>
+        <li>Vishal</li>
+        <li>Dipak</li>
+        <li>Shital</li>
+        <li>Priya</li>
+    </ul>
+    <!-- <ul>
+        <li>Dot Net</li>
+        <li>Testing</li>
+        <li>Java</li>
+    </ul> -->
+
+
+    <button id="btn">Click Me!!</button>
+    <br>
+    <br>
+    <input type="button" value="Submit" /> |
+    <button>Clear</button>
+</body>
+
+</html>
