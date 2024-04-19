@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script>
+        //$(function () {
+        //    alert('JQuery Loaded');
+        //});
+
+        $(function () {
+
+            //$('button').mouseenter(function () {
+            //    $(this).css('background-color', 'green');
+            //});
+
+            //$('button').mouseleave(function () {
+            //    $(this).css('background-color', 'red');
+            //});
+
+            //$('button').hover(function () {
+            //    $(this).css('background-color', 'green');
+            //}, function () {
+            //    $(this).css('background-color', 'red');
+            //});
+
+            //$('button').click(function () {
+            //    $(this).css('background-color', 'white');
+            //});
+
+            //$('button').dblclick(function () {
+            //    $(this).hide();
+            //});
+
+            //$('[type="text"]').focus(function () {
+            //    $(this).css('background-color', 'green');
+            //});
+
+            //$('[type="text"]').blur(function () {
+            //    $(this).css('background-color', 'red');
+            //});
+
+            //$('[type="text"]').keyup(function () {
+            //    $(this).css('background-color', 'white');
+            //});
+
+            $('[type="text"]').on({
+                focus: function () {
+                    $(this).css('background-color', 'green');
+                },
+                blur: function () {
+                    $(this).css('background-color', 'red');
+                },
+                keyup: function () {
+                    $(this).css('background-color', 'white');
+                }
+            });
+        });
+
+
+      
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2> Event Demo</h2>
+    <input type="text" />
+    <button>Log in</button>
+</body>
+</html>

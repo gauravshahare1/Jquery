@@ -5,7 +5,11 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JQuerySession", "JQuerySession\JQuerySession.csproj", "{7B2C10CB-385C-460A-AF20-323B30D01043}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JquereySelectors", "JquereySelectors\JquereySelectors.csproj", "{B09DFA7C-3321-4314-8C7B-AB4859D21148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JquereySelectors", "JquereySelectors\JquereySelectors.csproj", "{B09DFA7C-3321-4314-8C7B-AB4859D21148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{6385EA5F-A7DF-471B-A096-86DFE3CBB4B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effect", "Effect\Effect.csproj", "{E634F89D-94F7-4F49-B409-5BE852E6D55E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09DFA7C-3321-4314-8C7B-AB4859D21148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6385EA5F-A7DF-471B-A096-86DFE3CBB4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6385EA5F-A7DF-471B-A096-86DFE3CBB4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6385EA5F-A7DF-471B-A096-86DFE3CBB4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6385EA5F-A7DF-471B-A096-86DFE3CBB4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E634F89D-94F7-4F49-B409-5BE852E6D55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E634F89D-94F7-4F49-B409-5BE852E6D55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E634F89D-94F7-4F49-B409-5BE852E6D55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E634F89D-94F7-4F49-B409-5BE852E6D55E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
