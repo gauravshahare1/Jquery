@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h2>Get Set Content</h2>
+    Name : <input type="text" id="txt1" />
+    <p id="p1">First Paragraph</p>
+    <div id="div1">
+        Div Content
+        <span>Span Content</span>
+        <a href="http://www.google.com">Visit Google</a>
+    </div>
+    <!-- <button onclick="getContent()">Get Content</button> -->
+    <button id="btn1" >Get Content</button> |
+    <button id="btn2">Set Content</button>
+    <br><br>
+    <input type="text" id="txt2" />
+    <p id="p2"></p>
+    <div id="div2"></div>
+
+ 
+    <script>
+         //function getContent() {
+         //    var v = document.getElementById('txt1').value;
+         //    console.log(v);
+         //    v = document.getElementById('p1').innerText;
+         //    console.log(v);
+         //    v = document.getElementById('div1').innerHTML;
+         //    console.log(v);
+         //}
+
+        $(function () {
+            $('#btn1').click(function () {
+                var v = $('#txt1').val(); console.log(v);
+                v = $('#p1').text(); console.log(v);
+                v = $('#div1').html(); console.log(v);
+            });
+
+            $('#btn2').click(function () {
+                $('#txt2').val('vishal');
+                $('#p2').text('Second Paragraph');
+                $('#div2').html(`Div Content <span>Span Content</span>
+                <a href='http://www.facebook.com'>Visit Facebook</a>`);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

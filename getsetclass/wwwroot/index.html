@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <style>
+        .btnClass {
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Get Set CSS Classes</h2>
+    <button >Click Me !!!</button>
+
+   
+    <script>
+        $(function () {
+            $('button').click(function () {
+                 //$(this).addClass('btnClass');
+                 //$(this).removeClass('btnClass');
+                $(this).toggleClass('btnClass');
+                 //$('h2').toggleClass('btnClass');
+
+                 var c = $('h2').css('color');
+                 console.log(`color : ${c}`);
+
+                 c = $('h2').css('background-color');
+                 console.log(`background-color : ${c}`);
+
+                 $('h2').css('color', 'green');
+                 $('h2').css('background-color', 'skyblue');
+                 $('h2').css('border-bottom', '1px solid black');
+
+                //$('h2').css({
+                //    'color' : 'green',
+                //    'background-color' : 'skyblue',
+                //    'border-bottom' : '1px dashed black'
+                //});
+            });
+        });
+    </script>
+</body>
+
+</html>

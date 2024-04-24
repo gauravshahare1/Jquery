@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="lib/jquery/dist/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  
+    <style>
+        #city {
+            height: 200px;
+            /* overflow: scroll; */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Dropdown Demo</h2>
+
+    Visited City: <select id="city" multiple="true" style="width: 40%;">
+        <option value="-1">-- Select City --</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Delhi">Delhi</option>
+    </select>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $(function () {
+            $('#city').select2();
+
+             $('#city').change(function () {
+                 var city = $(this).val();
+                  alert(`Selected City : ${city}`);
+                 console.log(`Selected City : ${city}`);
+             });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <style>
+        .magic {
+            color: red;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Siblings Demo</h2>
+    <div>
+        <h2>Heading2</h2>
+        <h3>Heading3</h3>
+        <a href="#">a1</a>
+        <p>p1</p>
+        <h4>Heading4</h4>
+        <span>span1</span>
+    </div>
+    <hr>
+    <button>Click Me !!!</button>
+   
+    <script>
+        $(function (){
+            $('button').click(function (){
+                 //$('a').addClass('magic');
+                // $('a').siblings().addClass('magic');
+                // $('a').prev().addClass('magic');
+               //  $('a').prevAll().addClass('magic');
+                // $('a').prevUntil('h2').addClass('magic');
+                // $('a').next().addClass('magic');
+               // $('a').nextAll().addClass('magic');
+               // $('a').nextUntil('span').addClass('magic');
+               $('a').addClass('magic')
+               .siblings()
+               .addClass('magic');
+            });
+        });
+    </script>
+</body>
+</html>

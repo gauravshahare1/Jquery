@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <script src="lib/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+    <h2>Add Element Functions</h2>
+
+    <div id="div1">
+        Div Original Content
+    </div>
+    <br><br>
+    <button>Click Me !!!</button>
+
+    <hr>
+
+    <h3>Add all skills</h3>
+    <div id="skills">
+        <input type="text" /><input type="button" value="+" />
+    </div>
+
+
+ 
+
+    <script>
+        $(function () {
+
+            $('button').click(function () {
+                 //$('#div1').append('Appended Text');
+                // $('#div1').prepend('Prepended Text');
+                // $('#div1').after('After Text');
+                // $('#div1').before('Before Text');
+
+               // $('#div1').append('&nbsp;&nbsp;&nbsp;<a href="#">show more..</a>');
+                //$('#div1').prepend('<h3>Page Title</h3>');
+                //$('#div1').after('<input type="button" value="Stop"/>');
+                //$('#div1').before('<input type="button" value="Start"/>');
+            });
+
+             //$('[value="+"]').click(function(){
+             //    $('#skills').append('<br/><input type="text"/><input type="button" value="+"/>');
+             //});
+
+            //$('#skills').on('click', ':button', function () {
+            //    $('#skills').append('<br/><input type="text"/><input type="button" value="+"/>');
+            //     $('[value="+"]:last').after('<br/><input type="text"/><input type="button" value="+"/>');
+            //});
+
+        });
+
+         $('[value="+"]').on('click', function () {
+             $('#skills').append('<br/><input type="text"/><input type="button" value="+"/>');
+         });
+    </script>
+</body>
+
+</html>

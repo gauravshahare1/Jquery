@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <script src="lib/jquery/dist/jquery.js"></script>
+</head>
+<body>
+    <h2>Remove Elements</h2>
+
+    <div id="divContent">
+        <p>Paragraph Text</p>
+        <a href="http://www.google.com">Visit Google</a>
+    </div>
+
+    <hr>
+    <button>Click Me !!!</button>
+
+    
+    <script>
+        $(function (){
+
+            $('button').click(function (){
+               // $('#divContent').empty();
+                $('#divContent').remove();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

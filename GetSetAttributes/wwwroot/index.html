@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+</head>
+
+<body>
+    <h2>Get Set Attributes</h2>
+
+    <a id="a1" href="http://www.google.com" target="_blank">Visit Google</a>
+    <br>
+    <button id="btn1">Get Attribute</button> |
+    <button id="btn2">Set Attribute</button>
+    <br>
+    <a id="a2">Visit Facebook</a>
+    <br><br>
+    Password: <input type="password" id="pwd" /> <button id="btn3">Show</button>
+
+
+
+   
+    <script>
+        $(function () {
+            $('#btn1').click(function () {
+                console.log($('#a1').text());
+
+                var v1 = $('#a1').attr('href');
+                console.log(`href : ${v1}`);
+
+                v1 = $('#a1').attr('target');
+                console.log(`target : ${v1}`);
+            });
+
+            $('#btn2').click(function () {
+                // $('#a2').attr('href','http://www.facebook.com');
+                // $('#a2').attr('target', '_blank');
+
+                $('#a2').attr({
+                    'href': 'http://www.facebook.com',
+                    'target': '_blank'
+                });
+            });
+
+            $('#btn3').click(function () {
+                if ($(this).text() == 'Show') {
+                    $('#pwd').attr('type', 'text');
+                    $(this).text('Hide');
+                } else{
+                    $('#pwd').attr('type', 'password');
+                    $(this).text('Show');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
